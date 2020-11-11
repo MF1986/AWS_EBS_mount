@@ -21,5 +21,5 @@ cd /data
 #create a data file test
 sudo touch data.txt
 
-#write in file
-sudo echo 'It works!' | sudo tee -a data.txt
+#run bash as a sudo and write result to data.txt
+sudo bash -c "file -s /dev/xvdb > data.txt"
